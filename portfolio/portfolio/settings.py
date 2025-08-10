@@ -133,3 +133,8 @@ EMAIL_HOST_USER = 'latif4505017@cloud.neduet.edu.pk'  # your email
 EMAIL_HOST_PASSWORD = os.environ.get('Email_HOST_PASSWORD')
 EMAIL_USE_TLS = True
 
+
+
+
+# used because it was showing Forbidden (403) CSRF verification failed. Request aborted.
+CSRF_TRUSTED_ORIGINS = ['https://portfolio-production-cdf5.up.railway.app']
